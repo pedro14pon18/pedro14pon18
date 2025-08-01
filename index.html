@@ -1,53 +1,343 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f4f4f9;
+}
+.flashcard {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+cursor: pointer;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .front, .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+.card .front {
+background-color: #4c5baf;
+color: white;
+}
+.card .back {
+background-color: #f9f9f9;
+color: #333;
+transform: rotateY(180deg);
+}
+</style>
 </head>
-<body> 
+<body>
+
+<div class="flashcard">
+<div class="card">
+<div class="front">
+<h3>Quem sou?</h3>
+</div>
+<div class="back">
+<p>Meu nome é Pedro, tenho 16 anos e moro em Ponta Grossa, Eu estou em fase de estudos.</p>
+</div>
+</div>
+</div>
 
 </body>
 </html>
-<main>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f4f4f9;
+}
+.flashcard {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+cursor: pointer;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .front, .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+.card .front {
+background-color: #1b1a24;
+color: white;
+}
+.card .back {
+background-color: #f9f9f9;
+color: #992626;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
 
-    </main>
-    <footer>
-        <p>Quem sou eu?.</p>
-    </footer>
-    <main>
-    <section id="container"> 
-
-</section>
-<article class="cartao">
-                <div class="cartao__conteudo">
-
-                </div>
-            </article>
-            <h3> Quem sou eu? </h3>
-            <div class="cartao__conteudo__pergunta">
-Quem sou eu?
+<div class="flashcard">
+<div class="card">
+<div class="front">
+<h3>Meu Futuro</h3>
 </div>
-<div class="cartao__conteudo__resposta">
-Eu tenho 16 anosveu estudo no Colegio Estadual, eu trabalho em um mercado.
+<div class="back">
+<p>Pretendo estar com uma vida estável.</p>
 </div>
-<article class="cartao">
-        <div class="cartao__conteudo">
-                <h3> Meus pets </h3>
-                      <div class="cartao__conteudo__pergunta">
-                            Meus pets
-                        </div>                        
-                       <div class="cartao__conteudo__resposta">
-                            Não tenho.
-                         </div>
-                        </div>
-                        <article class="cartao">
-        <div class="cartao__conteudo">
-                <h3> Meus hobbis. </h3>
-                      <div class="cartao__conteudo__pergunta">
-                            Meus hobbies.
-                        </div>                        
-                       <div class="cartao__conteudo__resposta">
-                            jogar tenis-de-mesa, mecer no celular.
-                         </div>
-                        </div>
+</div>
+</div>
+
+</body>
+</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f4f4f9;
+}
+.flashcard {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+cursor: pointer;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .front, .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+.card .front {
+background-color: #4c6baf;
+color: white;
+}
+.card .back {
+background-color: #f9f9f9;
+color: #333;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<div class="flashcard">
+<div class="card">
+<div class="front">
+<h3>Meus Hobbies</h3>
+</div>
+<div class="back">
+<p>Jogar tenes-de-mesa e jogar jogos.</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f4f4f9;
+}
+.flashcard {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+cursor: pointer;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .front, .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+.card .front {
+background-color: #4c6faf;
+color: white;
+}
+.card .back {
+background-color: #f9f9f9;
+color: #333;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<div class="flashcard">
+<div class="card">
+<div class="front">
+<h3>Meu presente</h3>
+</div>
+<div class="back">
+<p>Estudo e Trabalho.</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f4f4f9;
+}
+.flashcard {
+width: 300px;
+height: 400px;
+perspective: 1000px;
+}
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+cursor: pointer;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .front, .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align: center;
+}
+.card .front {
+background-color: #4CAF50;
+color: white;
+}
+.card .back {
+background-color: #f9f9f9;
+color: #333;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<div class="flashcard">
+<div class="card">
+<div class="front">
+<h3>Eu e minha família</h3>
+</div>
+<div class="back">
+<p>Moro com meus pais e minhas tres irmãs.</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard: Quem sou?</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
