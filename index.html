@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Tempo</h1>
+    </header>
 
-  <body>
-    <section class="conteudo-principal">
-      <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
-      <div class="botoes">
-        <button class="botao">Cursos na Alura</button>
-        <button class="botao">Criar projetos em Javascript</button>
-        <button class="botao">Criar um portfolio</button>
-        <button class="botao">Atualizar meu currículo</button>
-      </div>
-    </section>
-  </body>
+    <main>
+        <div class="converter">
+            <label for="tempo">Digite o valor:</label>
+            <input type="number" id="tempo" placeholder="Ex: 120">
+            
+            <label for="unidadeOrigem">De:</label>
+            <select id="unidadeOrigem">
+                <option value="segundos">Segundos</option>
+                <option value="minutos">Minutos</option>
+                <option value="horas">Horas</option>
+            </select>
+            
+            <label for="unidadeDestino">Para:</label>
+            <select id="unidadeDestino">
+                <option value="segundos">Segundos</option>
+                <option value="minutos">Minutos</option>
+                <option value="horas">Horas</option>
+            </select>
+            
+            <button id="converterBtn">Converter</button>
+            
+            <p id="resultado">Resultado: 0</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Feito com 💻 por você!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
-@media screen and (min-width: 768px) {
-  /* Código omitido */
-
-  .botao:last-child {
-    border-radius: 0 40px 0 0;
-  }
-}
